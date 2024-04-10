@@ -11,7 +11,7 @@
 ### 2. Install ProxMox(PiMox)
        https://mirrors.apqa.cn
 
-#      1) Download port gpg key:
+#####  1) Download port gpg key:
           curl -L https://mirrors.apqa.cn/proxmox/debian/pveport.gpg -o /etc/apt/trusted.gpg.d/pveport.gpg
 ---
 
