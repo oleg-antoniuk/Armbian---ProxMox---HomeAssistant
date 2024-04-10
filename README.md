@@ -20,7 +20,8 @@
 #####  3) Do apt update:
           apt update
 
-apt update
+#####  4) Install proxmox(pimox):
+          apt install proxmox-ve
 ---
 
 ### 1. Installing Debian 12
