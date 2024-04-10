@@ -6,13 +6,13 @@
 ### 1. Install Armbian on TVbox:
        https://github.com/devmfc/debian-on-amlogic
 
-[![hassio_badge](https://img.shields.io/badge/home%20assistant-%2341BDF5.svg?&style=for-the-badge&logo=home%20assistant&logoColor=white)](https://www.home-assistant.io/)
-
-[![hass_inst_badge](https://img.shields.io/badge/HomeAssistant-Installer-blue.svg)](https://www.home-assistant.io/)
-
-![Supports i386 Architecture](https://img.shields.io/badge/i386-yes-green.svg)
 ** **
 
+### 2. Install ProxMox(PiMox)
+       https://mirrors.apqa.cn
+
+       1) Download port gpg key:
+          curl -L https://mirrors.apqa.cn/proxmox/debian/pveport.gpg -o /etc/apt/trusted.gpg.d/pveport.gpg
 ---
 
 ### 1. Installing Debian 12
