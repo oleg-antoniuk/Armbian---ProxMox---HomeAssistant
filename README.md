@@ -30,4 +30,10 @@
 
 ** **
 
-#### troubleshooting
+### troubleshooting:
+---
+bridge 'vmbr0' does not exist
+kvm: -netdev type=tap,id=net0,ifname=tap100i0,script=/var/lib/qemu-server/pve-bridge,downscript=/var/lib/qemu-server/pve-bridgedown: network script /var/lib/qemu-server/pve-bridge failed with status 512
+TASK ERROR: start failed: QEMU exited with code 1
+---
+
