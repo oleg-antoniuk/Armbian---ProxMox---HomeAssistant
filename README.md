@@ -25,9 +25,9 @@
 ** **
 
 ### 3. ProxMox(PiMox) script:
-##     Home Assistant OS VM:
+####   Home Assistant OS VM:
           bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/vm/pimox-haos-vm.sh)"
 
 ** **
 
-##troubleshooting
+#### troubleshooting
