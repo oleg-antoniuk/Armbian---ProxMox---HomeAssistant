@@ -37,3 +37,7 @@
 ###### TASK ERROR: start failed: QEMU exited with code 1
        https://itfb.com.ua/oshibka-pri-zapuske-virtualnoy-mashiny-bridge-vmbr0-does-not-exist/
        https://www.altlinux.org/Systemd-networkd
+---
+###### error /etc/pve/local/pve-ssl.pem: failed to use local certificate chain (cert_file or cert) at /usr/share/perl5/PVE/APIServer/AnyEvent.pm line 1998.
+
+       https://pve.proxmox.com/wiki/Proxmox_SSL_Error_Fixing
