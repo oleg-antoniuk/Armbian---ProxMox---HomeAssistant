@@ -5,6 +5,7 @@
 
 ### 1. Install Armbian on TVbox:
        https://github.com/devmfc/debian-on-amlogic
+       https://github.com/ophub/amlogic-s9xxx-armbian
 
 ** **
 
