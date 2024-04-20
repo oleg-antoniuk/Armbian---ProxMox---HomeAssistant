@@ -43,3 +43,55 @@
 ###### error /etc/pve/local/pve-ssl.pem: failed to use local certificate chain (cert_file or cert) at /usr/share/perl5/PVE/APIServer/AnyEvent.pm line 1998.
 
        https://pve.proxmox.com/wiki/Proxmox_SSL_Error_Fixing
+
+===
+===
+TorrentBoxInstall
+===
+Установка торрент БОКС (торрент качалка) на одноплатном компьютере Orange Pi или Banana PI.
+
+Торрент клиент с веб интефейсом и удаленным доступом  - qbittorrent.
+
+Установка:
+sudo apt-get install  qbittorrent-nox
+
+После установки соглашаемся с предупреждением.
+По-умолчанию адрес веб интерфейса localhost:8080
+Логин: admin
+Пароль: adminadmin
+
+Создадим службу
+sudo nano /etc/systemd/system/qbittorrent.service
+
+В пустой файл вставляем настройки:
+
+[Unit]
+Description=qBittorrent Daemon Service
+After=network.target
+
+[Service]
+User=ВАШ ПОЛЬЗОВАТЕЛЬ
+ExecStart=/usr/bin/qbittorrent-nox
+ExecStop=/usr/bin/killall -w qbittorrent-nox
+
+[Install]
+WantedBy=multi-user.target
+
+Перезагрузим даймон
+sudo systemctl daemon-reload
+
+Запустим сервис qbittorrent
+sudo systemctl start qbittorrent
+
+Что бы остановить сервис qbittorrent
+sudo systemctl stop qbittorrent
+
+Для скачивание торрентов на USB флешку или внешний USB, нужно сделать автомонтирование при подключении к USB
+
+Автомонтирование  USB накопителя:
+sudo fdisk -l
+sudo mkdir /media/andrey
+sudo mount /dev/sda1 /media/andrey
+
+sudo nano /etc/fstab
+/dev/sda1 /media/andrey auto defaults,nofail
